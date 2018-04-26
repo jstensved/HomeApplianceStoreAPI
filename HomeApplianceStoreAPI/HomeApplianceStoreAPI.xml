@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HomeApplianceStoreAPI</name>
+    </assembly>
+    <members>
+        <member name="T:HomeApplianceStoreAPI.Controllers.BasketItemsController">
+            <summary>
+            Manage items in user baskets
+            </summary>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.BasketItemsController.Get">
+            <summary>
+            Read items from all baskets
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.BasketItemsController.Get(System.String)">
+            <summary>
+            Read a specific item in a user basket
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.BasketItemsController.Post(HomeApplianceStoreAPI.Models.BasketItem)">
+            <summary>
+            Add a basket entry
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.BasketItemsController.Put(System.String,HomeApplianceStoreAPI.Models.BasketItem)">
+            <summary>
+            Get a specific entry by id
+            </summary>
+            <param name="id"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.BasketItemsController.Delete(System.String)">
+            <summary>
+            Delete a basket entry
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:HomeApplianceStoreAPI.Controllers.OrdersController">
+            <summary>
+            Manage orders in the store
+            </summary>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.OrdersController.Get">
+            <summary>
+            Get all orders
+            </summary>
+            <returns>A list of orders</returns>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.OrdersController.Get(System.String)">
+            <summary>
+            Get a specific order by id
+            </summary>
+            <param name="id">Id of ther order</param>
+            <returns>The order</returns>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.OrdersController.Post(HomeApplianceStoreAPI.Models.Order)">
+            <summary>
+            Create an order
+            </summary>
+            <param name="item">The order to create</param>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.OrdersController.Put(System.String,HomeApplianceStoreAPI.Models.Order)">
+            <summary>
+            Save an order
+            </summary>
+            <param name="id"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.OrdersController.Delete(System.String)">
+            <summary>
+            Delete an order
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.ProductsController.List(System.String)">
+            <summary>
+            List all products with optional filtering
+            </summary>
+            <param name="cat">Enter a category to only show products in this category. Not case sensitive.</param>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.ProductsController.Get(System.String)">
+            <summary>
+            Return a single product
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.ProductsController.Post(HomeApplianceStoreAPI.Models.Product)">
+            <summary>
+            Create a new product
+            </summary>
+            <param name="item">The product to create</param>
+            <returns>The created product</returns>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.ProductsController.Put(System.String,HomeApplianceStoreAPI.Models.Product)">
+            <summary>
+            Save a product
+            </summary>
+            <param name="id">Id of the product to save</param>
+            <param name="value">The product to save</param>
+        </member>
+        <member name="M:HomeApplianceStoreAPI.Controllers.ProductsController.Delete(System.String)">
+            <summary>
+            Delete a product
+            </summary>
+            <param name="id">The Product to delete</param>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.BasketItem.User">
+            <summary>
+            Username of the user
+            </summary>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.BasketItem.ProductId">
+            <summary>
+            Id of product
+            </summary>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.BasketItem.Amount">
+            <summary>
+            Amount of items in basket
+            </summary>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.Order.Id">
+            <summary>
+            Id of order
+            </summary>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.Order.User">
+            <summary>
+            Username of user
+            </summary>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.Order.Created">
+            <summary>
+            Time when this order was created
+            </summary>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.Order.Items">
+            <summary>
+            Items in this order
+            </summary>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.Product.Id">
+            <summary>
+            Id of product
+            </summary>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.Product.Price">
+            <summary>
+            Price if product
+            </summary>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.Product.Name">
+            <summary>
+            Name of product
+            </summary>
+        </member>
+        <member name="P:HomeApplianceStoreAPI.Models.Product.Categories">
+            <summary>
+            Categories this product belongs to
+            </summary>
+        </member>
+    </members>
+</doc>
